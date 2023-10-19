@@ -1,3 +1,14 @@
-<main>
-    <img src="{{ page.image }}" alt="" loading="lazy"/>
+<main class="not-found">
+    <div class="not-found__image">
+        <img src="{{ page.image }}" alt="404: Page not found"/>
+    </div>
+
+    <div class="not-found__text">
+        <p class="text">{{ page.title }}</p>
+
+        <a class="link" href="/">
+            <img src="../assets/images/arrow-left.svg" loading="lazy"/>
+            Homepage
+        </a>
+    </div>
 </main>
