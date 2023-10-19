@@ -1,9 +1,10 @@
+<article class="article">
+    <div class="article__heading">
+        <div class="image">
+            <img src="/{{ page.image }}" height="560" width="560" alt="{{ page.title }}" loading="eager" />
+        </div>
 
-<article>
-    <div>
-        <img src="/{{ page.image }}" alt="{{ page.title }}" loading="eager" />
-
-        <p>
+        <p class="info">
             {% if page.author %}
                 {{ page.author }},
             {% endif %}
@@ -11,10 +12,12 @@
             {{ page.date | date_to_string }}
         </p>
 
-        <h1>{{ page.title }}</h1>
+        <h1 class="title">
+            {{ page.title }}
+        </h1>
     </div>
 
-    <div>
+    <div class="article__content">
         {{ content }}
     </div>
 </article>

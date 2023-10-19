@@ -7,5 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Lora&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.style }}">
+    {% if page.is_post %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post.css">
+    {% else %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.style }}">
+    {% endif %}
 </head>
