@@ -1,5 +1,9 @@
-<section>
-    {% for post in site.posts %}
+<section class="posts">
+    <h2 class="posts__title">Articles</h2>
+
+    <div class="posts__articles">
+        {% for post in site.posts %}
         {% include card.html %}
-    {% endfor %}
+        {% endfor %}
+    </div>
 </section>

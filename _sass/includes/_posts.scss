@@ -1,0 +1,21 @@
+@import '../general/variables';
+
+.posts {
+    margin: 120px 0;
+
+    &__title {
+        font-family: $primary;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__articles {
+        @media(min-width: $medium) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+    }
+}

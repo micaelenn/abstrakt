@@ -1,22 +1,28 @@
-<div>
-    <div>
-        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy"
-        >
+<div class="card">
+    <div class="card__image">
+        <img src="{{ post.image }}" height="250" width="250" alt="{{ post.title }}" loading="lazy">
     </div>
 
-    <div>
-        <span>
+    <div class="card__text">
+        <span class="date">
             {{ post.date | date_to_string }}
         </span>
 
-        <h3>{{ post.title }}</h3>
+        <h3 class="title">
+            {{ post.title }}
+        </h3>
 
         {% if post.description %}
-            <p>{{ post.description }}</p>
+            <p class="description">
+                {{ post.description }}
+            </p>
         {% endif %}
 
-        <a href="{{ site.baseurl }}{{ post.url }}">
+        <span class="link-text">
             Read More
-        </a>
+            <img src="../assets/images/arrow-right.svg" />
+        </span>
+
+        <a class="link" href="{{ site.baseurl }}{{ post.url }}"></a>
     </div>
 </div>
