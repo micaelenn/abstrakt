@@ -21,7 +21,7 @@
 title: Minimal Theme
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-baseurl: /{{ github.event.repository.name }} # the subpath of your site, e.g. /blog
+baseurl: /jekyll-minimalist-theme # the subpath of your site, e.g. /blog
 url: https://micaelenn.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
