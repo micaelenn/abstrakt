@@ -21,8 +21,8 @@
 title: Minimal Theme
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /PROJECT # the subpath of your site, e.g. /blog
+url: http://USERNAME.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
 
@@ -43,9 +43,6 @@ defaults:
       type: posts   # limit to posts
     values:
       is_post: true # automatically set is_post=true for all posts
-
-baseurl: /PROJECT
-url: http://USERNAME.github.io
 
 # Exclude from processing.
 # The following items will not be processed, by default.
