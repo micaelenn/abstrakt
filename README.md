@@ -1,1 +1,1 @@
-# jekyll-minimal-theme
+# Abstrakt

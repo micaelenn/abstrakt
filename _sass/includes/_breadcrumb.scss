@@ -3,8 +3,15 @@
 
     &__link {
         color: $text-primary;
+        display: flex;
+        align-items: center;
         font-family: $primary;
         font-size: 16px;
         font-weight: 400;
+
+        img {
+            margin-right: 8px;
+            width: 25px;
+        }
     }
 }
